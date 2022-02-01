@@ -1,3 +1,4 @@
+
 cambioInicial();
 function cambioInicial() {
     let NuevaSesion = JSON.parse(localStorage.getItem("balizasGuardadas"));

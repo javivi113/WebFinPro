@@ -2,7 +2,7 @@ document.getElementById("aInicio").addEventListener("click", cambioIni);
 document.getElementById("aMisSitios").addEventListener("click", cambioSit);
 //document.getElementById("aApi").addEventListener("click", apiInicioSes);
 let lsSesion1 = localStorage.getItem("Sesion");
-if (lsSesion1 == undefined) {
+if (lsSesion1 == "false" || lsSesion1 == undefined) {
     $("body").css({
         "background-image": "url(https://www.sansebastianturismoa.eus/images/tematicos/bahia_ss_686.jpg)",
         "background-position": "center",

@@ -30,7 +30,8 @@ function updateData() {
         window.arrayLoc = JSON.parse(valoresLocalSt);
         
         if (arrayLoc.length == 1) {
-            fetch(`${url}/api/Tiempo/${arrayLoc[0][0]}`)
+            fetch(`${url}/api/Tiempo/${arrayLoc[0][0]}`/*,{ headers:{ 'Content-Type': 'application/json',
+            'Authentication': `Bearer ${localStorage.getItem("Key")}`,}}*/)
                 .then(response => response.json())
                 .then(b => {
                     editarBloque(b.municipio, b.temperatura, b.descripcionTiempo, b.pathImg, b.velocidadViento, b.precipitaciones);
