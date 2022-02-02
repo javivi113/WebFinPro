@@ -111,6 +111,7 @@ function colocarMarcadores() {
         })
         .catch(err => console.log(err));
 }
+window.colocarMarcadores;
 let lsSesion = localStorage.getItem("Sesion")
 if (lsSesion == "false" || lsSesion == undefined) {
     $("body").css({
@@ -120,6 +121,10 @@ if (lsSesion == "false" || lsSesion == undefined) {
         "background-size": "cover"
     });
     colocarMarcadores();
+    document.getElementById("aInicio").addEventListener("click", function(){
+        colocarMarcadores();
+        cambioIni();        
+    });
     setTimeout(function () { $("#SesionIniciada").hide() }, 10);
     $(".dLogin").show();
     $(".inicioPanel").show();
@@ -128,6 +133,10 @@ if (lsSesion == "false" || lsSesion == undefined) {
     $("#SesionIniciada").show();
     $(".inicioPanel").hide();
     colocarMarcadores();
+    document.getElementById("aInicio").addEventListener("click", function(){
+        colocarMarcadores();
+        cambioIni();        
+    });
     cambioInicial();
 }
 

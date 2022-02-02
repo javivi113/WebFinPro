@@ -1,0 +1,217 @@
+.dLogin {
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.dLogin .inicioPanel {
+  background-color: rgba(37, 63, 133, 0.75);
+  height: auto;
+  width: 27%;
+  padding: 2%;
+  margin: auto auto;
+  border: 1px solid #fbfaf0;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px 0px #050a0a;
+}
+.dLogin .inicioPanel h1 {
+  color: #fbfaf0;
+}
+.dLogin .inicioPanel span {
+  color: #fbfaf0;
+}
+.dLogin .inicioPanel .btnSesion {
+  margin: 10px;
+  border: 1px solid #050a0a;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: #fbfaf0;
+  color: #050a0a;
+}
+.dLogin .inicioPanel .btnSesion:hover {
+  background-color: #050a0a;
+  color: #fbfaf0;
+}
+.dLogin .inicioPanel p {
+  color: #fbfaf0;
+}
+.dLogin .inicioPanel p span {
+  color: #788287;
+  text-decoration: underline;
+}
+.dLogin .inicioPanel p span:hover {
+  color: #050a0a;
+}
+
+@media screen and (max-width: 1600px) {
+  .inicioPanel {
+    left: 55%;
+  }
+}
+#dDragMovible {
+  border: 1px solid #050a0a;
+}
+
+nav {
+  position: fixed;
+  overflow: hidden;
+  background: linear-gradient(0deg, #253f85 0%, #4160e6 90%);
+  height: 50px;
+  top: 0;
+  width: 100%;
+}
+nav ul {
+  list-style: none;
+}
+nav ul img {
+  height: 40px;
+  width: 40px;
+}
+nav ul li {
+  display: inline-block;
+  float: left;
+  color: #fbfaf0;
+  font-size: 25px;
+}
+nav ul li p {
+  text-decoration: none;
+  font-size: 28px;
+  color: #fbfaf0;
+  margin-left: 10rem;
+}
+nav ul li p:hover {
+  font-size: 28px;
+  color: #050a0a;
+  cursor: pointer;
+}
+
+.iEstadoTiempo {
+  width: 60px;
+  height: 60px;
+}
+
+#dMisSitios {
+  margin: 55px;
+}
+#dMisSitios ul {
+  color: #050a0a;
+  list-style: none;
+}
+#dMisSitios ul li {
+  display: inline-block;
+  float: left;
+  color: #050a0a;
+  font-size: 25px;
+  margin-right: 20px;
+}
+#dMisSitios .balizasGuardada {
+  border: 1px solid #050a0a;
+  box-shadow: 3px 3px 0px 0px #788287;
+  border-radius: 10px;
+  margin: 4%;
+  text-align: center;
+}
+#dMisSitios .balizasGuardada .hLocalidadGuardada:first-letter {
+  text-transform: uppercase;
+}
+
+#dVerTiempo {
+  width: 30%;
+}
+
+#dVisializar {
+  margin: 55px;
+}
+
+.iconoDragabble {
+  font-size: 50px;
+  text-align: center;
+}
+
+.iconoDragabble:hover {
+  font-size: 55px;
+  border: 1px solid #050a0a;
+  box-shadow: 3px 7px 0px 0px grey;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.dDatoParam {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  display: none;
+}
+
+.iconoPanel {
+  font-size: 25px;
+}
+.iconoPanel span {
+  margin-left: 2%;
+  font-size: 20px;
+}
+
+.dElemDrag {
+  border: 5px solid #253f85;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 10px 10px 0px 0px #4160e6;
+  margin: 15px;
+  padding: 25px;
+}
+
+#iBasura {
+  color: #c81e32;
+  margin-bottom: 10px;
+  float: right;
+  font-size: 40px;
+  display: none;
+}
+
+.dFunMapas {
+  margin: 0 auto;
+  margin-top: 8%;
+}
+
+#map {
+  width: 900px;
+  height: 500px;
+  border: 5px solid #050a0a;
+  border-radius: 10px;
+}
+
+#dOpciones {
+  width: 350px;
+  height: 175px;
+  border-left: 3px solid #050a0a;
+  border-right: 3px solid #050a0a;
+  border-bottom: 3px solid #050a0a;
+  display: none;
+  margin: auto;
+}
+
+.pDBaliza {
+  text-align: center;
+}
+
+.pDBaliza:first-letter {
+  text-transform: uppercase;
+}
+
+#dBalSele {
+  margin: auto;
+}
+
+.btnOpciones {
+  border-radius: 10px 10px 10px 10px;
+  border: 1px solid #050a0a;
+  background-color: #4160e6;
+  width: 100px;
+  height: 50px;
+  margin-left: 13%;
+  margin-top: 7%;
+}
+
+.btnExit {
+  float: right;
+  font-size: 10px;
+}
+/*# sourceMappingURL=index.526859ab.css.map */
