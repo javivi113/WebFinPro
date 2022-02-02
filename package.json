@@ -4,9 +4,11 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "parcel build src/*.html --public-url /2daw3/javierm/Proyecto1",
+    "build": "parcel build src/*.html --public-url /2daw3/javierm/Proyecto",
     "prebuild": "(test -d dist || mkdir dist) && cp -rv src/data/EstacionesCompleto.json dist",
     "prestart": "yarn prebuild",
+    "preproxy": "yarn prebuild",
+    "proxy": "parcel build src/*.html",
     ".": "parcel serve src/*.html --open"
   },
   "devDependencies": {

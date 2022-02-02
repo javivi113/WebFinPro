@@ -1,11 +1,12 @@
 document.getElementById("btnInicioSesion").addEventListener("click", IniciarSes);
 // document.getElementById("btnRegistrarse").addEventListener("click", registrarse);
-
+const url = "http://localhost:4000";
+window.url = url;
 function IniciarSes() {
     let usu = $("#inpUsuario").val();
     let cont = $("#inpContraseña").val();
 
-    fetch("http://localhost:4000/Users/authenticate", {
+    fetch(`${url}/Users/authenticate`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -28,8 +29,10 @@ function IniciarSes() {
                     "background-repeat": "no-repeat",
                     "background-size": "cover"
                 });
-            }else{
+                colocarMarcadores();
+            } else {
                 localStorage.setItem("Sesion", "false")
+                alert("Usuario y/o contraseña no son correctos")
             }
         })
         .catch(err => alert("Usuario y/o contraseña no son correctos"))

@@ -1,7 +1,7 @@
 import L from 'leaflet';
 const map = L.map('map').setView([43.0119500, -2.56789], 8.5);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
-var url = "https://localhost:5001";
+
 const oMarker = JSON.parse(aMarkers);
 let bPrim = false;
 var selectIcon = new L.Icon({
@@ -20,10 +20,16 @@ var unSelectIcon = new L.Icon({
     popupAnchor: [1, -34],
     shadowSize: [41, 41]
 });
-var arrayIdMarkadores=[];
+var arrayIdMarkadores = [];
 
 function colocarMarcadores() {
-    fetch(`${url}/api/Tiempo`)
+    fetch(`${url}/api/Tiempo`, {
+        method: 'GET',
+        headers: {
+            'Accept': 'application/json',
+            'Authorization': `Bearer ${JSON.parse(localStorage.getItem("Key"))}`,
+        }
+    })
         .then(response => {
             return response.json();
         })
@@ -34,17 +40,17 @@ function colocarMarcadores() {
             var getsVal = [""];
             var stMunipaNoRep = new Set();
             let valGuardados = localStorage.getItem("balizasGuardadas");
-            let aSoloBalizas= new Array();
-            let iPosAbali=0;
+            let aSoloBalizas = new Array();
+            let iPosAbali = 0;
             if (valGuardados != undefined) {
                 getsVal = JSON.parse(valGuardados);
-                getsVal.forEach(a=>{
-                    aSoloBalizas[iPosAbali]=a[0];
+                getsVal.forEach(a => {
+                    aSoloBalizas[iPosAbali] = a[0];
                     iPosAbali++;
                 })
             }
-            if (arrayIdMarkadores.length!=0) {
-                arrayIdMarkadores.forEach(id=>map.removeLayer(id))
+            if (arrayIdMarkadores.length != 0) {
+                arrayIdMarkadores.forEach(id => map.removeLayer(id))
             }
             oMarker.forEach(b => {
                 api.forEach(munici => {
@@ -107,5 +113,4 @@ function colocarMarcadores() {
         })
         .catch(err => console.log(err));
 }
-colocarMarcadores();
 window.colocarMarcadores = colocarMarcadores;

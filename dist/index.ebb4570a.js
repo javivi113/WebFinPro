@@ -467,7 +467,6 @@ const map = _leafletDefault.default.map('map').setView([
     -2.56789
 ], 8.5);
 _leafletDefault.default.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
-var url = "https://localhost:5001";
 const oMarker = JSON.parse(aMarkers);
 let bPrim = false;
 var selectIcon = new _leafletDefault.default.Icon({
@@ -512,7 +511,13 @@ var unSelectIcon = new _leafletDefault.default.Icon({
 });
 var arrayIdMarkadores = [];
 function colocarMarcadores() {
-    fetch(`${url}/api/Tiempo`).then((response)=>{
+    fetch(`${url}/api/Tiempo`, {
+        method: 'GET',
+        headers: {
+            'Accept': 'application/json',
+            'Authorization': `Bearer ${JSON.parse(localStorage.getItem("Key"))}`
+        }
+    }).then((response)=>{
         return response.json();
     }).then((api)=>{
         let i = 0;
@@ -595,7 +600,6 @@ function colocarMarcadores() {
     }).catch((err)=>console.log(err)
     );
 }
-colocarMarcadores();
 window.colocarMarcadores = colocarMarcadores;
 
 },{"leaflet":"1Rhcw","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"1Rhcw":[function(require,module,exports) {

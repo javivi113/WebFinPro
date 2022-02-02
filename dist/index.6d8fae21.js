@@ -40,7 +40,13 @@ function addBaliza() {
             ""
         ];
         document.getElementById("dGuardadoError").innerHTML = "";
-        fetch(`${url}/api/Tiempo/${bal}`).then((response)=>response.json()
+        fetch(`${url}/api/Tiempo/${bal}`, {
+            method: 'GET',
+            headers: {
+                'Accept': 'application/json',
+                'Authorization': `Bearer ${JSON.parse(localStorage.getItem("Key"))}`
+            }
+        }).then((response)=>response.json()
         ).then((b)=>{
             crearBloque(b.municipio, b.temperatura, b.descripcionTiempo, b.pathImg, b.velocidadViento, b.precipitaciones);
         }).catch((err)=>console.log(err)
@@ -67,7 +73,13 @@ function addBaliza() {
                     ""
                 ];
                 asBalizas.add(bal);
-                fetch(`${url}/api/Tiempo/${bal}`).then((response)=>response.json()
+                fetch(`${url}/api/Tiempo/${bal}`, {
+                    method: 'GET',
+                    headers: {
+                        'Accept': 'application/json',
+                        'Authorization': `Bearer ${JSON.parse(localStorage.getItem("Key"))}`
+                    }
+                }).then((response)=>response.json()
                 ).then((b)=>{
                     crearBloque(b.municipio, b.temperatura, b.descripcionTiempo, b.pathImg, b.velocidadViento, b.precipitaciones);
                 }).catch((err)=>console.log(err)

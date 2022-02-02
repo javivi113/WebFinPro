@@ -34,7 +34,13 @@ function addBaliza() {
         console.log("solo hay uno")
         localBalizas[0] = [bal, "", "", "", ""]
         document.getElementById("dGuardadoError").innerHTML = "";
-        fetch(`${url}/api/Tiempo/${bal}`)
+        fetch(`${url}/api/Tiempo/${bal}`, {
+            method: 'GET',
+            headers: {
+                'Accept': 'application/json',
+                'Authorization': `Bearer ${JSON.parse(localStorage.getItem("Key"))}`,
+            }
+        })
             .then(response => response.json())
             .then(b => {
                 crearBloque(b.municipio, b.temperatura, b.descripcionTiempo, b.pathImg, b.velocidadViento, b.precipitaciones);
@@ -55,7 +61,13 @@ function addBaliza() {
             if (asBalizas.size < 3) {
                 localBalizas[i] = [bal, "", "", "", ""]
                 asBalizas.add(bal);
-                fetch(`${url}/api/Tiempo/${bal}`)
+                fetch(`${url}/api/Tiempo/${bal}`, {
+                    method: 'GET',
+                    headers: {
+                        'Accept': 'application/json',
+                        'Authorization': `Bearer ${JSON.parse(localStorage.getItem("Key"))}`,
+                    }
+                })
                     .then(response => response.json())
                     .then(b => {
                         crearBloque(b.municipio, b.temperatura, b.descripcionTiempo, b.pathImg, b.velocidadViento, b.precipitaciones);
@@ -153,10 +165,10 @@ window.editarBloque = editarBloque;
 function cierraBotones() {
     $(".btnExit").on("click", e => {
         e.target.parentElement.style.display = "none";
-        let aId=e.target.id.split("_");
-        let sParam=aId[0];
-        let loc=aId[1];
-        
+        let aId = e.target.id.split("_");
+        let sParam = aId[0];
+        let loc = aId[1];
+
         $(`#dDat${sParam}${loc}`).hide();
         let valGuardados = JSON.parse(localStorage.getItem("balizasGuardadas"));
         let i = 0;
