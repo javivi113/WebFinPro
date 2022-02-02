@@ -29,7 +29,7 @@ function IniciarSes() {
                     "background-repeat": "no-repeat",
                     "background-size": "cover"
                 });
-                colocarMarcadores();
+                location.reload();
             } else {
                 localStorage.setItem("Sesion", "false")
                 alert("Usuario y/o contraseña no son correctos")

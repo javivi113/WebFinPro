@@ -119,6 +119,7 @@ if (lsSesion == "false" || lsSesion == undefined) {
         "background-repeat": "no-repeat",
         "background-size": "cover"
     });
+    colocarMarcadores();
     setTimeout(function () { $("#SesionIniciada").hide() }, 10);
     $(".dLogin").show();
     $(".inicioPanel").show();
