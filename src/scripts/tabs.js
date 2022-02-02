@@ -1,33 +1,7 @@
 document.getElementById("aInicio").addEventListener("click", cambioIni);
 document.getElementById("aMisSitios").addEventListener("click", cambioSit);
 //document.getElementById("aApi").addEventListener("click", apiInicioSes);
-try {
-    let lsSesion = localStorage.getItem("Sesion")
-    if (lsSesion == "false" || lsSesion == undefined) {
-        $("body").css({
-            "background-image": "url(https://www.sansebastianturismoa.eus/images/tematicos/bahia_ss_686.jpg)",
-            "background-position": "center",
-            "background-repeat": "no-repeat",
-            "background-size": "cover"
-        });
-        setTimeout(function () { $("#SesionIniciada").hide() }, 10);
-        $(".dLogin").show();
-        $(".inicioPanel").show();
-    } else {
-        $(".dLogin").hide();
-        $("#SesionIniciada").show();
-        $(".inicioPanel").hide();
-        cambioInicial();
-        colocarMarcadores();
-
-    }
-}
-catch (e) {
-
-}
-
 $("#dMisSitios").hide();
-
 function cambioIni() {
     $("#dInicio").show();
     $("#dMisSitios").hide();

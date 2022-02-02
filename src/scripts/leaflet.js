@@ -104,8 +104,6 @@ function colocarMarcadores() {
                                     })
                                 arrayIdMarkadores.push(marcador);
                             }
-
-
                         }
                     }
                 })
@@ -113,4 +111,22 @@ function colocarMarcadores() {
         })
         .catch(err => console.log(err));
 }
-window.colocarMarcadores = colocarMarcadores;
+let lsSesion = localStorage.getItem("Sesion")
+if (lsSesion == "false" || lsSesion == undefined) {
+    $("body").css({
+        "background-image": "url(https://www.sansebastianturismoa.eus/images/tematicos/bahia_ss_686.jpg)",
+        "background-position": "center",
+        "background-repeat": "no-repeat",
+        "background-size": "cover"
+    });
+    setTimeout(function () { $("#SesionIniciada").hide() }, 10);
+    $(".dLogin").show();
+    $(".inicioPanel").show();
+} else {
+    $(".dLogin").hide();
+    $("#SesionIniciada").show();
+    $(".inicioPanel").hide();
+    colocarMarcadores();
+    cambioInicial();
+}
+

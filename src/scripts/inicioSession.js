@@ -1,6 +1,6 @@
 document.getElementById("btnInicioSesion").addEventListener("click", IniciarSes);
 // document.getElementById("btnRegistrarse").addEventListener("click", registrarse);
-const url = "http://localhost:4000";
+const url = "http://10.10.17.119:4000";
 window.url = url;
 function IniciarSes() {
     let usu = $("#inpUsuario").val();
@@ -35,5 +35,4 @@ function IniciarSes() {
                 alert("Usuario y/o contraseña no son correctos")
             }
         })
-        .catch(err => alert("Usuario y/o contraseña no son correctos"))
 }
