@@ -1,6 +1,6 @@
 16775
 53C:\Users\2daw3\proyecto\WebFinPro\node_modules\assert132883462378087104 1
-57C:\Users\2daw3\proyecto\WebFinPro\dist\index.a5c01603.css132883519667993200 0
+57C:\Users\2daw3\proyecto\WebFinPro\dist\index.a5c01603.css132883637517946891 0
 72C:\Users\2daw3\proyecto\WebFinPro\node_modules\side-channel\CHANGELOG.md132760069918480000 0
 74C:\Users\2daw3\proyecto\WebFinPro\node_modules\relateurl\lib\parse\port.js132760069818520000 0
 85C:\Users\2daw3\proyecto\WebFinPro\node_modules\@parcel\packager-js\lib\DevPackager.js132814333261750000 0
@@ -33,7 +33,7 @@
 44C:\Users\2daw3\proyecto\WebFinPro\.gitignore132883459778133844 0
 65C:\Users\2daw3\proyecto\WebFinPro\node_modules\lodash\_getView.js132760069827770000 0
 75C:\Users\2daw3\proyecto\WebFinPro\node_modules\css-tree\lib\walker\index.js132760069787110000 0
-38C:\Users\2daw3\proyecto\WebFinPro\dist132883519668183245 1
+38C:\Users\2daw3\proyecto\WebFinPro\dist132883637518267184 1
 93C:\Users\2daw3\proyecto\WebFinPro\node_modules\@babel\traverse\lib\path\inference\inferers.js132846429372530000 0
 113C:\Users\2daw3\proyecto\WebFinPro\node_modules\postcss-modules-local-by-default\node_modules\postcss\lib\input.js132760069803820000 0
 62C:\Users\2daw3\proyecto\WebFinPro\node_modules\unpipe\index.js132760069817050000 0
@@ -176,7 +176,7 @@
 92C:\Users\2daw3\proyecto\WebFinPro\node_modules\ansi-escapes\node_modules\type-fest\base.d.ts132787513465630000 0
 101C:\Users\2daw3\proyecto\WebFinPro\node_modules\ansi-escapes\node_modules\type-fest\source\opaque.d.ts132787513465630000 0
 53C:\Users\2daw3\proyecto\WebFinPro\src\style\main.sass132883459783703789 0
-62C:\Users\2daw3\proyecto\WebFinPro\src\scripts\elemDragables.js132883459783683236 0
+62C:\Users\2daw3\proyecto\WebFinPro\src\scripts\elemDragables.js132883637006181431 0
 69C:\Users\2daw3\proyecto\WebFinPro\node_modules\aws-sign2\package.json132760069874560000 0
 84C:\Users\2daw3\proyecto\WebFinPro\node_modules\core-js\modules\es.promise.finally.js132846429373110000 0
 56C:\Users\2daw3\proyecto\WebFinPro\node_modules\saxes\lib132883462598779685 1
@@ -190,7 +190,7 @@
 64C:\Users\2daw3\proyecto\WebFinPro\node_modules\lodash\fp\nAry.js132760069827770000 0
 85C:\Users\2daw3\proyecto\WebFinPro\node_modules\svgo\plugins\addClassesToSVGElement.js132814333267650000 0
 67C:\Users\2daw3\proyecto\WebFinPro\src\scripts\EstacionesCompleto.js132883459783683236 0
-62C:\Users\2daw3\proyecto\WebFinPro\src\scripts\inicioSession.js132883519554907144 0
+62C:\Users\2daw3\proyecto\WebFinPro\src\scripts\inicioSession.js132883545678353984 0
 65C:\Users\2daw3\proyecto\WebFinPro\node_modules\lodash\_Promise.js132760069827770000 0
 56C:\Users\2daw3\proyecto\WebFinPro\node_modules\picomatch132883462437654543 1
 81C:\Users\2daw3\proyecto\WebFinPro\node_modules\w3c-xmlserializer\lib\constants.js132760069872530000 0
@@ -929,7 +929,7 @@
 80C:\Users\2daw3\proyecto\WebFinPro\node_modules\@parcel\workers\src\WorkerFarm.js132814333252250000 0
 99C:\Users\2daw3\proyecto\WebFinPro\node_modules\jsdom\lib\jsdom\living\generated\MutationObserver.js132760069827130000 0
 58C:\Users\2daw3\proyecto\WebFinPro\node_modules\cosmiconfig132883462399518292 1
-62C:\Users\2daw3\proyecto\WebFinPro\dist\EstacionesCompleto.json132883519657843789 0
+62C:\Users\2daw3\proyecto\WebFinPro\dist\EstacionesCompleto.json132883637505526550 0
 96C:\Users\2daw3\proyecto\WebFinPro\node_modules\caniuse-lite\data\features\public-class-fields.js132846429371740000 0
 85C:\Users\2daw3\proyecto\WebFinPro\node_modules\highlight.js\scss\qtcreator_light.scss132760069818900000 0
 71C:\Users\2daw3\proyecto\WebFinPro\node_modules\w3c-hr-time\CHANGELOG.md132760069871810000 0
@@ -1143,7 +1143,6 @@
 61C:\Users\2daw3\proyecto\WebFinPro\node_modules\public-encrypt132883462463387399 1
 55C:\Users\2daw3\proyecto\WebFinPro\node_modules\domutils132883462403743183 1
 60C:\Users\2daw3\proyecto\WebFinPro\node_modules\dotenv-expand132883462403873185 1
-56C:\Users\2daw3\proyecto\WebFinPro\dist\index.3e3f5dc1.js132883519668003199 0
 66C:\Users\2daw3\proyecto\WebFinPro\node_modules\statuses\HISTORY.md132760069817240000 0
 110C:\Users\2daw3\proyecto\WebFinPro\node_modules\@parcel\node-resolver-core\test\fixture\node_modules\@scope\pkg132883462759048617 1
 80C:\Users\2daw3\proyecto\WebFinPro\node_modules\css-select\lib\procedure.d.ts.map132846429374770000 0
@@ -2814,7 +2813,7 @@
 94C:\Users\2daw3\proyecto\WebFinPro\node_modules\@parcel\transformer-json\src\JSONTransformer.js132814333265780000 0
 69C:\Users\2daw3\proyecto\WebFinPro\node_modules\lodash\fp\findIndex.js132760069827770000 0
 72C:\Users\2daw3\proyecto\WebFinPro\node_modules\vm-browserify\.travis.yml132760069851520000 0
-56C:\Users\2daw3\proyecto\WebFinPro\dist\index.820b6be6.js132883519667993200 0
+56C:\Users\2daw3\proyecto\WebFinPro\dist\index.820b6be6.js132883637517946891 0
 64C:\Users\2daw3\proyecto\WebFinPro\node_modules\hash.js\README.md132760069912800000 0
 109C:\Users\2daw3\proyecto\WebFinPro\node_modules\uncss\node_modules\postcss-selector-parser\dist\__tests__\util132883462744928002 1
 70C:\Users\2daw3\proyecto\WebFinPro\node_modules\lodash\_baseAssignIn.js132760069827770000 0
@@ -5579,7 +5578,7 @@
 75C:\Users\2daw3\proyecto\WebFinPro\node_modules\postcss-value-parser\LICENSE132828232460680000 0
 69C:\Users\2daw3\proyecto\WebFinPro\node_modules\nanoid\async\index.cjs132787513500890000 0
 58C:\Users\2daw3\proyecto\WebFinPro\node_modules\ora\license132760069727090000 0
-56C:\Users\2daw3\proyecto\WebFinPro\dist\index.fd5ab585.js132883519668003199 0
+56C:\Users\2daw3\proyecto\WebFinPro\dist\index.fd5ab585.js132883637517946891 0
 85C:\Users\2daw3\proyecto\WebFinPro\node_modules\posthtml-parser\test\test-core.spec.ts132760069799900000 0
 75C:\Users\2daw3\proyecto\WebFinPro\node_modules\ajv\lib\dot\dependencies.jst132760069894890000 0
 67C:\Users\2daw3\proyecto\WebFinPro\node_modules\@parcel\packager-css132883462384170080 1
@@ -6127,7 +6126,7 @@
 110C:\Users\2daw3\proyecto\WebFinPro\node_modules\postcss-modules-scope\node_modules\color-convert\conversions.js132760069781630000 0
 70C:\Users\2daw3\proyecto\WebFinPro\node_modules\optionator\package.json132760069891930000 0
 76C:\Users\2daw3\proyecto\WebFinPro\node_modules\es-abstract\2018\SameValue.js132778192324730000 0
-60C:\Users\2daw3\proyecto\WebFinPro\dist\index.ba76d687.js.map132883519668103206 0
+60C:\Users\2daw3\proyecto\WebFinPro\dist\index.ba76d687.js.map132883637518126930 0
 70C:\Users\2daw3\proyecto\WebFinPro\node_modules\function-bind\.eslintrc132760069908670000 0
 98C:\Users\2daw3\proyecto\WebFinPro\node_modules\postcss-modules-local-by-default\node_modules\chalk132883462460217413 1
 104C:\Users\2daw3\proyecto\WebFinPro\node_modules\postcss-modules-scope\node_modules\color-convert\index.js132760069781630000 0
@@ -8118,7 +8117,7 @@
 131C:\Users\2daw3\proyecto\WebFinPro\node_modules\@parcel\node-resolver-core\test\fixture\node_modules\package-browser-exclude\main.js132814333267870000 0
 65C:\Users\2daw3\proyecto\WebFinPro\node_modules\cssom\lib\index.js132760069866050000 0
 85C:\Users\2daw3\proyecto\WebFinPro\node_modules\lmdb-store\dependencies\lmdb\libraries132883462375627103 1
-60C:\Users\2daw3\proyecto\WebFinPro\dist\index.37eba575.js.map132883519668103206 0
+60C:\Users\2daw3\proyecto\WebFinPro\dist\index.37eba575.js.map132883637518126930 0
 80C:\Users\2daw3\proyecto\WebFinPro\node_modules\lodash\_customDefaultsAssignIn.js132760069827770000 0
 77C:\Users\2daw3\proyecto\WebFinPro\node_modules\lodash\_customDefaultsMerge.js132760069827770000 0
 73C:\Users\2daw3\proyecto\WebFinPro\node_modules\lodash\_customOmitClone.js132760069827770000 0
@@ -10259,7 +10258,7 @@
 82C:\Users\2daw3\proyecto\WebFinPro\node_modules\http-proxy\lib\http-proxy\common.js132760069781310000 0
 81C:\Users\2daw3\proyecto\WebFinPro\node_modules\http-proxy\lib\http-proxy\index.js132760069781310000 0
 83C:\Users\2daw3\proyecto\WebFinPro\node_modules\caniuse-lite\data\features\webgl2.js132846429371740000 0
-61C:\Users\2daw3\proyecto\WebFinPro\dist\index.a5c01603.css.map132883519668103206 0
+61C:\Users\2daw3\proyecto\WebFinPro\dist\index.a5c01603.css.map132883637518126930 0
 94C:\Users\2daw3\proyecto\WebFinPro\node_modules\http-proxy\lib\http-proxy\passes\ws-incoming.js132760069781310000 0
 62C:\Users\2daw3\proyecto\WebFinPro\node_modules\htmlparser2\lib132883462567780312 1
 92C:\Users\2daw3\proyecto\WebFinPro\node_modules\@parcel\transformer-postcss\src\loadConfig.js132814333265980000 0
@@ -10356,7 +10355,7 @@
 73C:\Users\2daw3\proyecto\WebFinPro\node_modules\hmac-drbg\lib\hmac-drbg.js132760069912460000 0
 82C:\Users\2daw3\proyecto\WebFinPro\node_modules\core-js\stable\typed-array\every.js132846429373110000 0
 63C:\Users\2daw3\proyecto\WebFinPro\node_modules\highlight.js\lib132883462563470320 1
-56C:\Users\2daw3\proyecto\WebFinPro\dist\index.445703c1.js132883519667993200 0
+56C:\Users\2daw3\proyecto\WebFinPro\dist\index.445703c1.js132883637517946891 0
 86C:\Users\2daw3\proyecto\WebFinPro\node_modules\es-abstract\2017\OrdinaryToPrimitive.js132778192324730000 0
 67C:\Users\2daw3\proyecto\WebFinPro\node_modules\highlight.js\LICENSE132760069818900000 0
 69C:\Users\2daw3\proyecto\WebFinPro\node_modules\highlight.js\README.md132760069818900000 0
@@ -13426,7 +13425,7 @@
 83C:\Users\2daw3\proyecto\WebFinPro\node_modules\core-js\modules\esnext.map.key-by.js132846429373110000 0
 83C:\Users\2daw3\proyecto\WebFinPro\node_modules\core-js\modules\esnext.map.key-of.js132846429373110000 0
 87C:\Users\2daw3\proyecto\WebFinPro\node_modules\core-js\modules\esnext.map.map-values.js132846429373110000 0
-56C:\Users\2daw3\proyecto\WebFinPro\dist\index.ba76d687.js132883519668003199 0
+56C:\Users\2daw3\proyecto\WebFinPro\dist\index.ba76d687.js132883637517946891 0
 90C:\Users\2daw3\proyecto\WebFinPro\node_modules\@babel\core\node_modules\debug\package.json132828232460990000 0
 82C:\Users\2daw3\proyecto\WebFinPro\node_modules\core-js\modules\esnext.map.merge.js132846429373110000 0
 83C:\Users\2daw3\proyecto\WebFinPro\node_modules\core-js\modules\esnext.map.update.js132846429373110000 0
@@ -13447,7 +13446,7 @@
 87C:\Users\2daw3\proyecto\WebFinPro\node_modules\core-js\modules\esnext.object.has-own.js132846429373110000 0
 87C:\Users\2daw3\proyecto\WebFinPro\node_modules\@parcel\watcher\src\windows\win_utils.cc132846429370000000 0
 92C:\Users\2daw3\proyecto\WebFinPro\node_modules\core-js\modules\esnext.object.iterate-keys.js132846429373110000 0
-60C:\Users\2daw3\proyecto\WebFinPro\dist\index.1c599783.js.map132883519668103206 0
+60C:\Users\2daw3\proyecto\WebFinPro\dist\index.1c599783.js.map132883637518126930 0
 92C:\Users\2daw3\proyecto\WebFinPro\node_modules\core-js\modules\esnext.promise.all-settled.js132846429373110000 0
 84C:\Users\2daw3\proyecto\WebFinPro\node_modules\core-js\modules\esnext.promise.any.js132846429373110000 0
 84C:\Users\2daw3\proyecto\WebFinPro\node_modules\core-js\modules\esnext.promise.try.js132846429373110000 0
@@ -14073,7 +14072,7 @@
 77C:\Users\2daw3\proyecto\WebFinPro\node_modules\core-js\es\typed-array\from.js132846429373110000 0
 104C:\Users\2daw3\proyecto\WebFinPro\node_modules\@parcel\transformer-babel\node_modules\json5\lib\index.js132760069724750000 0
 81C:\Users\2daw3\proyecto\WebFinPro\node_modules\core-js\es\typed-array\includes.js132846429373110000 0
-56C:\Users\2daw3\proyecto\WebFinPro\dist\index.37eba575.js132883519667993200 0
+56C:\Users\2daw3\proyecto\WebFinPro\dist\index.37eba575.js132883637517946891 0
 78C:\Users\2daw3\proyecto\WebFinPro\node_modules\core-js\es\typed-array\index.js132846429373110000 0
 84C:\Users\2daw3\proyecto\WebFinPro\node_modules\core-js\es\typed-array\int16-array.js132846429373110000 0
 74C:\Users\2daw3\proyecto\WebFinPro\node_modules\caniuse-lite\data\agents.js132846429371740000 0
@@ -16576,7 +16575,7 @@
 115C:\Users\2daw3\proyecto\WebFinPro\node_modules\@babel\helper-compilation-targets\node_modules\.bin\browserslist.cmd132883462760038634 0
 105C:\Users\2daw3\proyecto\WebFinPro\node_modules\@babel\helper-compilation-targets\node_modules\.bin\semver132883462760088662 0
 93C:\Users\2daw3\proyecto\WebFinPro\node_modules\@babel\helper-compilation-targets\lib\debug.js132814333269250000 0
-56C:\Users\2daw3\proyecto\WebFinPro\dist\index.ea983384.js132883519668003199 0
+56C:\Users\2daw3\proyecto\WebFinPro\dist\index.ea983384.js132883637517946891 0
 100C:\Users\2daw3\proyecto\WebFinPro\node_modules\@babel\helper-compilation-targets\lib\filter-items.js132814333269250000 0
 93C:\Users\2daw3\proyecto\WebFinPro\node_modules\@babel\helper-compilation-targets\lib\index.js132814333269250000 0
 95C:\Users\2daw3\proyecto\WebFinPro\node_modules\@babel\helper-compilation-targets\lib\options.js132814333269250000 0
@@ -16767,10 +16766,11 @@
 57C:\Users\2daw3\proyecto\WebFinPro\node_modules\.bin\uncss132883462767228626 0
 57C:\Users\2daw3\proyecto\WebFinPro\node_modules\.bin\which132883462767328633 0
 61C:\Users\2daw3\proyecto\WebFinPro\node_modules\.bin\which.cmd132883462767328633 0
-56C:\Users\2daw3\proyecto\WebFinPro\dist\index.1c599783.js132883519667993200 0
-60C:\Users\2daw3\proyecto\WebFinPro\dist\index.3e3f5dc1.js.map132883519668103206 0
-60C:\Users\2daw3\proyecto\WebFinPro\dist\index.445703c1.js.map132883519668173211 0
-60C:\Users\2daw3\proyecto\WebFinPro\dist\index.820b6be6.js.map132883519668173211 0
-60C:\Users\2daw3\proyecto\WebFinPro\dist\index.ea983384.js.map132883519668103206 0
-60C:\Users\2daw3\proyecto\WebFinPro\dist\index.fd5ab585.js.map132883519668113212 0
-49C:\Users\2daw3\proyecto\WebFinPro\dist\index.html132883519667993200 0
+56C:\Users\2daw3\proyecto\WebFinPro\dist\index.1c599783.js132883637517946891 0
+60C:\Users\2daw3\proyecto\WebFinPro\dist\index.445703c1.js.map132883637518126930 0
+56C:\Users\2daw3\proyecto\WebFinPro\dist\index.6b70bf38.js132883637517946891 0
+60C:\Users\2daw3\proyecto\WebFinPro\dist\index.6b70bf38.js.map132883637518236922 0
+60C:\Users\2daw3\proyecto\WebFinPro\dist\index.820b6be6.js.map132883637518126930 0
+60C:\Users\2daw3\proyecto\WebFinPro\dist\index.ea983384.js.map132883637518176915 0
+60C:\Users\2daw3\proyecto\WebFinPro\dist\index.fd5ab585.js.map132883637518126930 0
+49C:\Users\2daw3\proyecto\WebFinPro\dist\index.html132883637517946891 0

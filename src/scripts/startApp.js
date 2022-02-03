@@ -1,4 +1,5 @@
-
+// llamamos a la funcion para saber si mostrar el mapa o las 
+// balizas guardadas en caso de haber algo en el localstorage
 cambioInicial();
 function cambioInicial() {
     try {
