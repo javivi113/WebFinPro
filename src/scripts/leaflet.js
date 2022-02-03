@@ -23,7 +23,7 @@ var unSelectIcon = new L.Icon({
 var arrayIdMarkadores = [];
 
 function colocarMarcadores() {
-    fetch(`${url}/api/Tiempo`, {
+    fetch(`${urlTiempo}`, {
         method: 'GET',
         headers: {
             'Accept': 'application/json',

@@ -34,7 +34,7 @@ function addBaliza() {
         console.log("solo hay uno")
         localBalizas[0] = [bal, "", "", "", ""]
         document.getElementById("dGuardadoError").innerHTML = "";
-        fetch(`${url}/api/Tiempo/${bal}`, {
+        fetch(`${urlTiempo}/${bal}`, {
             method: 'GET',
             headers: {
                 'Accept': 'application/json',
@@ -61,7 +61,7 @@ function addBaliza() {
             if (asBalizas.size < 3) {
                 localBalizas[i] = [bal, "", "", "", ""]
                 asBalizas.add(bal);
-                fetch(`${url}/api/Tiempo/${bal}`, {
+                fetch(`${urlTiempo}/${bal}`, {
                     method: 'GET',
                     headers: {
                         'Accept': 'application/json',

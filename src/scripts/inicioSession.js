@@ -1,12 +1,15 @@
 document.getElementById("btnInicioSesion").addEventListener("click", IniciarSes);
-//const url = "http://10.10.17.119:4000";
-const url = "http://localhost:5000";
-window.url = url;
+const urlTiempo = "http://10.10.17.119/apiTiempo";
+const urlUsers = "http://10.10.17.119/apiUsers";
+//const url = "http://localhost:5000";
+
+window.urlTiempo = urlTiempo;
+window.urlUsers = urlUsers;
 function IniciarSes() {
     let usu = $("#inpUsuario").val();
     let cont = $("#inpContraseña").val();
 
-    fetch(`${url}/Users/authenticate`, {
+    fetch(`${urlUsers}/authenticate`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

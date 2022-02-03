@@ -4,7 +4,7 @@ function GuardarDatosApi() {
     if (valoresLocalSt != undefined || valoresLocalSt != null) {
         window.arrayLoc = JSON.parse(valoresLocalSt);
         if (arrayLoc.length == 1) {
-            fetch(`${url}/api/Tiempo/${arrayLoc[0][0]}`, {
+            fetch(`${urlTiempo}/${arrayLoc[0][0]}`, {
                 method: 'GET',
                 headers: {
                     'Accept': 'application/json',
@@ -18,7 +18,7 @@ function GuardarDatosApi() {
                 .catch(err => console.log(err));
         } else {
             arrayLoc.forEach(a => {
-                fetch(`${url}/api/Tiempo/${a[0]}`, {
+                fetch(`${urlTiempo}/${a[0]}`, {
                     method: 'GET',
                     headers: {
                         'Accept': 'application/json',
@@ -41,7 +41,7 @@ function updateData() {
         window.arrayLoc = JSON.parse(valoresLocalSt);
 
         if (arrayLoc.length == 1) {
-            fetch(`${url}/api/Tiempo/${arrayLoc[0][0]}`, {
+            fetch(`${urlTiempo}/${arrayLoc[0][0]}`, {
                 method: 'GET',
                 headers: {
                     'Accept': 'application/json',
@@ -55,7 +55,7 @@ function updateData() {
                 .catch(err => console.log(err));
         } else {
             arrayLoc.forEach(a => {
-                fetch(`${url}/api/Tiempo/${a[0]}`, {
+                fetch(`${urlTiempo}/${a[0]}`, {
                     method: 'GET',
                     headers: {
                         'Accept': 'application/json',

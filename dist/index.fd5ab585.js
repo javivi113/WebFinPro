@@ -1,0 +1,2 @@
+function cambioIni(){$("#dInicio").show(),$("#dMisSitios").hide()}function cambioSit(){$("#dInicio").hide(),$("#dMisSitios").show(),null==localStorage.getItem("balizasGuardadas")?$("#dGuardadoError").html("<h4>No hay ninguna baliza guardada!</h4>"):(document.getElementById("dGuardadoError").innerHTML="",document.getElementById("dBalizasGuar").innerHTML="",GuardarDatosApi())}document.getElementById("aMisSitios").addEventListener("click",cambioSit),$("#dMisSitios").hide(),window.cambioIni=cambioIni,window.cambioSit=cambioSit;
+//# sourceMappingURL=index.fd5ab585.js.map
