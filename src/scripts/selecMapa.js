@@ -1,4 +1,5 @@
 let getsVal;
+//Funcion para elinar las balizas del localstorage
 function delBaliza(loc) {
     let valGuardados = JSON.parse(localStorage.getItem("balizasGuardadas"));
     let asBalizas = new Array();
@@ -12,6 +13,7 @@ function delBaliza(loc) {
     });
     i = 0;
     let m = 0;
+    // Se salta la posicion en la que esta la baliza a eliminar
     valGuardados.forEach(a => {
         if (i != del) {
             asBalizas[m] = a;
@@ -19,10 +21,13 @@ function delBaliza(loc) {
         }
         i++;
     })
+    //Guardamos los cambios
     localStorage.setItem("balizasGuardadas", JSON.stringify([...asBalizas]));
     cambioInicial();
 }
 window.delBaliza = delBaliza;
+// Añade la baliza al localstorage preveniendo de que este repetida
+// y crea el bloque donde estan los datos de esta
 function addBaliza() {
     let localBalizas = new Array();
     let asBalizas = new Set();
@@ -46,9 +51,9 @@ function addBaliza() {
                 crearBloque(b.municipio, b.temperatura, b.descripcionTiempo, b.pathImg, b.velocidadViento, b.precipitaciones);
             })
             .catch(err => console.log(err));
+            //Guarda los cambios
         localStorage.setItem("balizasGuardadas", JSON.stringify([...localBalizas]));
     } else {
-
         document.getElementById("dGuardadoError").innerHTML = "";
         asBalizas = new Set();
         getsVal = JSON.parse(valGuardados);
@@ -81,6 +86,8 @@ function addBaliza() {
         localStorage.setItem("balizasGuardadas", JSON.stringify([...localBalizas]));
     }
 }
+// Funcion que crea el div con los datos de cada localidad
+//estos datos estaran oculos por defecto
 function crearBloque(a, temp, descTiempo, imgTiempo, velViento, precipitaciones) {
     var fecha = new Date;
     document.getElementById("dBalizasGuar").innerHTML +=
@@ -110,12 +117,17 @@ function crearBloque(a, temp, descTiempo, imgTiempo, velViento, precipitaciones)
                        
         </div>    
     </div>`;
+    // Los bloques se hara draggeables
     crearBloqueDraggable();
+    // cada parametro tendra un boton por si se desea ocultar
     cierraBotones();
+    // Se les aplica el drop de parametros
     paramDrop();
+    // Guarda en el local storage los cambios de cada baliza
     ocultarMostrarParametro(a);
 
 }
+// funcion que guarda en el local los cambios realizados y los aplica
 function ocultarMostrarParametro(loc) {
     let valGuardados = JSON.parse(localStorage.getItem("balizasGuardadas"));
     let i = 0;
@@ -129,6 +141,7 @@ function ocultarMostrarParametro(loc) {
         console.log(`#dDat${a}${loc}`);
     })
 }
+// funcion para sacar en que posicion de la array iran los parametros
 function posParametro(p) {
     switch (p) {
         case "Tiempo":
@@ -142,6 +155,8 @@ function posParametro(p) {
     }
 }
 window.posParametro = posParametro;
+
+// Edita los datos del bloque de cada baliza independientemte si estan siendo mostrados o no
 function editarBloque(a, temp, descTiempo, imgTiempo, velViento, precipitaciones) {
     document.getElementById(`dDatTiempo${a}`).innerHTML = `
     <i class="bi bi-x-circle btnExit" id="Tiempo_${a}" value="${a}"></i>  
@@ -162,6 +177,8 @@ function editarBloque(a, temp, descTiempo, imgTiempo, velViento, precipitaciones
     paramDrop();
 }
 window.editarBloque = editarBloque;
+// funcion que oculata los parametros mostrados en el div de las balizas
+// cambias los datos en el localstorage
 function cierraBotones() {
     $(".btnExit").on("click", e => {
         e.target.parentElement.style.display = "none";
@@ -173,8 +190,6 @@ function cierraBotones() {
         let valGuardados = JSON.parse(localStorage.getItem("balizasGuardadas"));
         let i = 0;
         let pos = 0;
-        console.log(sParam)
-        console.log(loc)
         let iParam = 0;
         switch (sParam) {
             case "Tiempo":
@@ -196,13 +211,13 @@ function cierraBotones() {
             }
             i++;
         });
-        console.log(iParam)
-        console.log(valGuardados[pos]);
         valGuardados[pos][iParam] = "";
         console.log(valGuardados[pos][iParam]);
         localStorage.setItem("balizasGuardadas", JSON.stringify([...valGuardados]));
     })
 }
+// funcion no Aplicada 
+// creara una ventana individual con los datos de la baliza sin aplicarlo al local storage
 function verBaliza() {
     let sBaliza = this.value;
     cambioVerBaliza();
